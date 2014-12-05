@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Richard Conley</title>
+		<meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no"/>
+
+		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+		<script type="text/javascript">  
+			$(function() {  
+				$("#ref").click(function() {  
+					animate(".demo", 'bounceOutLeft');  
+					return false;  
+				});  
+			});  
+	  
+			function animate(element_ID, animation) {  
+				$(element_ID).addClass(animation);  
+				var wait = window.setTimeout( function(){  
+					$(element_ID).removeClass(animation)}, 1300  
+				);  
+			}  
+			
+			$(function() {  
+				$(".link").click(function() {  
+					var href = $(this).attr('href');
+					animate(".demo", 'bounceOutLeft');
+					//$(this).load("projects.html");
+					setTimeout(function(){ document.location = href;}, 500 );
+					//window.location="projects.html";
+					return false;  
+				});  
+			});    
+			
+		</script> 
+		<link href='http://fonts.googleapis.com/css?family=Play' rel='stylesheet' type='text/css'>
+		<style>
+			#header-text {
+				
+				text-align: center;
+				position: relative;
+				font-family: 'Play', sans-serif;
+				font-weight: 800;
+				font-size: 250%;
+			}
+			
+			.p_header {
+	
+				position: relative;
+				font-family: 'Play', sans-serif;
+				font-weight: 200;
+				font-size: 180%;
+				text-align: center;
+			}
+			
+			
+			
+			#list1 { }
+			#list1 ul { list-style:none; text-align:center; border-top:1px solid #eee; border-bottom:1px solid #eee; padding:10px 0; }
+			#list1 ul li { display:inline; text-transform:uppercase; padding:0 10px; letter-spacing:10px; }
+			#list1 ul li a { text-decoration:none; font-family:'Play', sans-serif; color:black; }
+			#list1 ul li a:hover { text-decoration:underline; }
+		
+		img {
+			width: 200px;
+			height: auto;
+		}
+		
+		#center {
+			text-align: center;
+		}
+		#center img {
+			display: inline-block;
+			position: relative;
+			width: 100px;
+			height: 100px;
+		}
+		
+		</style>
+		<link rel="stylesheet" type="text/css" media="all" href="css/animate.css"> 
+		<link href="css/hover.css" rel="stylesheet" media="all">
+		<!--<link rel="stylesheet" type="text/css" media="all" href="css/style2.css"/>-->
+	
+	</head>
+
+	<body>
+
+		<div id="header-text">
+				Richard Conley
+		</div>
+
+		
+		<div id="list1">
+			<ul>
+				<li><a href="desktop.html" class="link">About me</a></li>
+				<li><a href="projects.html" class="link">Projects</a></li>
+				<li><a href="contact.html" class="link">Contact info.</a></li>
+			</ul>
+		</div>
+		
+
+		<!--Main content-->
+		<div class="demo animated bounceInRight">
+			<h1 class="p_header">Contact me</h1>
+			</br>
+			<div id="center">
+				<a href="">
+					<img src="res/email.png" alt="Email" class="pop">
+				</a>
+			
+				<a href="">
+					<img src="res/google.png" alt="Google+" class="pop">
+				</a>
+				
+				<a href="">
+					<img src="res/twitter.png" alt="Twitter" class="pop">
+				</a>
+			
+				<a href="">
+					<img src="res/github.png" alt="GitHub" class="pop">
+				</a>
+			</div>
+		</div>
+	</body>
+</html>

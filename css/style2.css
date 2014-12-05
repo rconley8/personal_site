@@ -1,0 +1,57 @@
+html {
+    overflow-y: scroll;
+}
+
+/*
+Setup a basic body
+*/
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: Helvetica;
+    font-size: 18px;
+}
+
+
+
+/*
+using background color is important to cover the menu
+position absolute isset to cover the whole viewport
+*/
+#content {
+    background-color: #FFFFFF;
+    padding: 52px 10px 10px 10px;
+    position: relative;
+    width: auto;
+    height: 100%;
+    -webkit-box-shadow: -10px 0px 9px 0px rgba(0, 0, 0, 0.4);
+    box-shadow: -10px 0px 9px 0px rgba(0, 0, 0, 0.4);
+}
+
+#image {
+	float: right;
+}
+
+/*
+the hamburger button with a little gradient effekt
+*/
+#navmenu {
+}
+
+/*
+text in header
+*/
+
+#header-text {
+	
+	position: absolute;
+	color: white;
+	font-family: 'Play', sans-serif;
+	font-weight: 300;
+	font-size: 200%;
+	margin-right: 35px;
+	bottom: 9px;
+	right: 0px;
+}
+

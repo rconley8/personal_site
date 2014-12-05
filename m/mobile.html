@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Richard Conley</title>
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no"/>
+
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.1/jquery-ui.min.js"></script>
+
+	<link href='http://fonts.googleapis.com/css?family=Play' rel='stylesheet' type='text/css'>
+	
+    <script src="../js/jquery.js"></script>
+
+    <!--<link rel="stylesheet" type="text/css" media="all" href="css/style2.css"/>
+    <link rel="stylesheet" type="text/css" media="only screen and (max-width: 480px), only screen and (max-device-width: 480px)" href="css/style.css"/>
+    -->
+    
+
+    <link rel="stylesheet" type="text/css" media="all" href="../css/style.css"/>
+
+   
+    
+</head>
+
+<body>
+
+<!--This wrapping container is used to get the width of the whole content-->
+<div id="container">
+
+    <!--The Hamburger Button in the Header-->
+    <header>
+        <div id="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div id="header-text">
+            	Richard Conley
+        </div>
+    </header>
+
+    <!--The mobile navigation Markup hidden via css-->
+    <nav>
+        <ul>
+            <li><a href="#">About me</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact info.</a></li>
+        </ul>
+    </nav>
+
+    <!--The Layer that is over the content
+    so that the content is unclickable while menu is open-->
+    <div id="contentLayer"></div>
+
+    <!--Main content-->
+    <div id="content">
+        <h1>About me</h1>
+		<div id="image">
+			<img src="../res/Blinky.png" alt="Me"> <!-- class="TextWrap"-->
+		</div>
+        <!--<h2>second header</h2>-->
+
+        <p>
+            My name is Richard Conley and I am currently a Computer Science
+            student at Otterbein University.  I am passionate about classic hand-drawn
+            animation, modern CGI, comics, web development and mobile development.
+        </p>
+        <p>
+            When I'm not engaged in one of the above, I enjoy attending many different
+            conferences.  My "regulars" are Ohio Linux Fest, PyOhio and Mid-Ohio Comic-Con.
+        </p>
+
+        <p>
+            I currently work for Network Technologies International, Inc.  I am a Technical
+            Support Analyst specializing in our DRNetOPEN product.  DRNetOPEN extends DRNet's
+            HP NonStop Server-based data replication product line to other hardware environments.
+            DRNetOPEN collects database updates from NonStop Servers and uses our powerful
+            messaging middleware to replicate data to most other kinds of hardware platforms,
+            including Windows, Unix, and Linux.
+        </p>
+    	
+    </div>
+    
+
+</div>
+</body>
+</html>

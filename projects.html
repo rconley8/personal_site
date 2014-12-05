@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Richard Conley</title>
+		<meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no"/>
+
+		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+		<script type="text/javascript">  
+			$(function() {  
+				$("#ref").click(function() {  
+					animate(".demo", 'bounceOutLeft');  
+					return false;  
+				});  
+			});  
+	  
+			function animate(element_ID, animation) {  
+				$(element_ID).addClass(animation);  
+				var wait = window.setTimeout( function(){  
+					$(element_ID).removeClass(animation)}, 1300  
+				);  
+			}  
+			
+			$(function() {  
+				$(".link").click(function() {  
+					var href = $(this).attr('href');
+					animate(".demo", 'bounceOutLeft');
+					//$(this).load("projects.html");
+					setTimeout(function(){ document.location = href;}, 500 );
+					//window.location="projects.html";
+					return false;  
+				});  
+			}); 
+			
+		</script> 
+		<link href='http://fonts.googleapis.com/css?family=Play' rel='stylesheet' type='text/css'>
+		<style>
+			#header-text {
+	
+				text-align: center;
+				position: relative;
+				font-family: 'Play', sans-serif;
+				font-weight: 800;
+				font-size: 250%;
+			}
+			
+			.p_header {
+	
+				position: relative;
+				font-family: 'Play', sans-serif;
+				font-weight: 200;
+				font-size: 180%;
+				text-align: center;
+			}
+			
+			/*ul {
+	
+				position: relative;
+				font-family: 'Play', sans-serif;
+				font-weight: 200;
+				font-size: 90%;
+				height: 100px;
+				width: 500px;
+			}*/
+			
+			#list1 { }
+			#list1 ul { list-style:none; text-align:center; border-top:1px solid #eee; border-bottom:1px solid #eee; padding:10px 0; }
+			#list1 ul li { display:inline; text-transform:uppercase; padding:0 10px; letter-spacing:10px; }
+			#list1 ul li a { text-decoration:none; font-family:'Play', sans-serif; color:black; }
+			#list1 ul li a:hover { text-decoration:underline; }
+			
+			
+			p.blocktext {
+				text-align: center;
+			}
+			
+			.center.round-corners {
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+				width: 15%;
+				height: auto;
+			}
+			
+			a {
+				color: #838584;
+			}
+			
+		</style>
+		<link rel="stylesheet" type="text/css" media="all" href="css/animate.css"> 
+		<link href="css/hover.css" rel="stylesheet" media="all">
+		<!--<link rel="stylesheet" type="text/css" media="all" href="css/style2.css"/>-->
+	
+	</head>
+
+	<body>
+
+		<div id="header-text">
+				Richard Conley
+		</div>
+
+		<div id="list1">
+			<ul>
+				<li><a href="desktop.html" class="link">About me</a></li>
+				<li><a href="projects.html" class="link">Projects</a></li>
+				<li><a href="contact.html" class="link">Contact info.</a></li>
+			</ul>
+		</div>
+
+		<!--Main content-->
+		<div class="demo animated bounceInRight">
+			<h1 class="p_header">Projects</h1>
+			</br>
+			<a href="https://play.google.com/store/apps/details?id=com.rc.ZombieBird&hl=en">
+				<img src="res/flimsyfish.png" alt="flimsyfish" class="center round-corners"> 
+			</a>
+			</br>
+			<p class="blocktext">
+				I am very proud of my most recent project <a href="https://play.google.com/store/apps/details?id=com.rc.ZombieBird&hl=en" id="ref">FlimsyFish</a>.  It is current available for free on the Google Play Store.  
+				<p class="blocktext">To see more of my projects, check out my <a href="">GitHub</a>.
+				</p>
+			</p>
+	
+		</div>
+	</body>
+</html>
